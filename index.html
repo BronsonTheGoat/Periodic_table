@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="hu" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Az elemek periódusos rendszere</title>
+    <link rel="icon" type="image/png" href="assets/atom-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="script.js" charset="utf-8"></script>
+    <script src="https://kit.fontawesome.com/d2d96f76af.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main>
+      <div class="grid-container">
+        <div class="element nonmetal" id="1">
+          <p class="number">1</p>
+          <h2 class="symbol">H</h2>
+          <h4 class="name">Hidrogén</h4>
+          <p class="mass">1,008</p>
+        </div>
+        <div class="empty firstrow">
+          <h1>Az elemek periódusos rendszere</h1>
+        </div>
+        <div class="element noblegas" id="2">
+          <p class="number">2</p>
+          <h2 class="symbol">He</h2>
+          <h4 class="name">Hélium</h4>
+          <p class="mass">4,003</p>
+        </div>
+        <div class="element alkalimetal" id="3">
+          <p class="number">3</p>
+          <h2 class="symbol">Li</h2>
+          <h4 class="name">Lítium</h4>
+          <p class="mass">6,941</p>
+        </div>
+        <div class="element alkalineearth" id="4">
+          <p class="number">4</p>
+          <h2 class="symbol">Be</h2>
+          <h4 class="name">Berillium</h4>
+          <p class="mass">9,012</p>
+        </div>
+        <div class="empty secondrow">
+          <div class="element" id="black">
+            <p class="number">Rendszám</p>
+            <h2 class="symbol">Vegyjel</h2>
+            <h4 class="name">Név</h4>
+            <p class="mass">Atomtömeg</p>
+          </div>
+        </div>
+        <div class="element basicmetal" id="5">
+          <p class="number">5</p>
+          <h2 class="symbol">B</h2>
+          <h4 class="name">Bór</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element nonmetal" id="6">
+          <p class="number">6</p>
+          <h2 class="symbol">C</h2>
+          <h4 class="name">Szén</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element nonmetal" id="7">
+          <p class="number">7</p>
+          <h2 class="symbol">N</h2>
+          <h4 class="name">Nitrogén</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element nonmetal" id="8">
+          <p class="number">8</p>
+          <h2 class="symbol">O</h2>
+          <h4 class="name">Oxigén</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element halogen" id="9">
+          <p class="number">9</p>
+          <h2 class="symbol">F</h2>
+          <h4 class="name">Fluor</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element noblegas" id="10">
+          <p class="number">10</p>
+          <h2 class="symbol">Ne</h2>
+          <h4 class="name">Neon</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element alkalimetal" id="11">
+          <p class="number">11</p>
+          <h2 class="symbol">Na</h2>
+          <h4 class="name">Nátrium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element alkalineearth" id="12">
+          <p class="number">12</p>
+          <h2 class="symbol">Mg</h2>
+          <h4 class="name">Magnézium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element basicmetal" id="13">
+          <p class="number">13</p>
+          <h2 class="symbol">Al</h2>
+          <h4 class="name">Alumínium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element basicmetal" id="14">
+          <p class="number">14</p>
+          <h2 class="symbol">Si</h2>
+          <h4 class="name">Szilícium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element nonmetal" id="15">
+          <p class="number">15</p>
+          <h2 class="symbol">P</h2>
+          <h4 class="name">Foszfor</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element nonmetal" id="16">
+          <p class="number">16</p>
+          <h2 class="symbol">S</h2>
+          <h4 class="name">Kén</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element halogen" id="17">
+          <p class="number">17</p>
+          <h2 class="symbol">Cl</h2>
+          <h4 class="name">Klór</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element noblegas" id="18">
+          <p class="number">18</p>
+          <h2 class="symbol">Ar</h2>
+          <h4 class="name">Argon</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element alkalimetal" id="19">
+          <p class="number">19</p>
+          <h2 class="symbol">K</h2>
+          <h4 class="name">Kálium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element alkalineearth" id="20">
+          <p class="number">20</p>
+          <h2 class="symbol">Ca</h2>
+          <h4 class="name">Kalcium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">21</p>
+          <h2 class="symbol">Sc</h2>
+          <h4 class="name">Szkandium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">22</p>
+          <h2 class="symbol">Ti</h2>
+          <h4 class="name">Titán</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">23</p>
+          <h2 class="symbol">V</h2>
+          <h4 class="name">Vanádium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">24</p>
+          <h2 class="symbol">Cr</h2>
+          <h4 class="name">Króm</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">25</p>
+          <h2 class="symbol">Mn</h2>
+          <h4 class="name">Mangán</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">26</p>
+          <h2 class="symbol">Fe</h2>
+          <h4 class="name">Vas</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">27</p>
+          <h2 class="symbol">Co</h2>
+          <h4 class="name">Kobalt</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">28</p>
+          <h2 class="symbol">Ni</h2>
+          <h4 class="name">Nikkel</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">29</p>
+          <h2 class="symbol">Cu</h2>
+          <h4 class="name">Réz</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">30</p>
+          <h2 class="symbol">Zn</h2>
+          <h4 class="name">Cink</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element basicmetal" id="">
+          <p class="number">31</p>
+          <h2 class="symbol">Ga</h2>
+          <h4 class="name">Gallium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element nonmetal" id="">
+          <p class="number">32</p>
+          <h2 class="symbol">Ge</h2>
+          <h4 class="name">Germánium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element basicmetal" id="">
+          <p class="number">33</p>
+          <h2 class="symbol">As</h2>
+          <h4 class="name">Arzén</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element nonmetal" id="">
+          <p class="number">34</p>
+          <h2 class="symbol">Se</h2>
+          <h4 class="name">Szelén</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element halogen" id="">
+          <p class="number">35</p>
+          <h2 class="symbol">Br</h2>
+          <h4 class="name">Bróm</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element noblegas" id="">
+          <p class="number">36</p>
+          <h2 class="symbol">Kr</h2>
+          <h4 class="name">Kripton</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element alkalimetal" id="">
+          <p class="number">37</p>
+          <h2 class="symbol">Rb</h2>
+          <h4 class="name">Rubídium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element alkalineearth" id="">
+          <p class="number">38</p>
+          <h2 class="symbol">Sr</h2>
+          <h4 class="name">Stroncium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">39</p>
+          <h2 class="symbol">Y</h2>
+          <h4 class="name">Ittirium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">40</p>
+          <h2 class="symbol">Zr</h2>
+          <h4 class="name">Cirkónium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">41</p>
+          <h2 class="symbol">Nb</h2>
+          <h4 class="name">Nióbium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">42</p>
+          <h2 class="symbol">Mo</h2>
+          <h4 class="name">Molibdén</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">43</p>
+          <h2 class="symbol">Tc</h2>
+          <h4 class="name">Technécium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">44</p>
+          <h2 class="symbol">Ru</h2>
+          <h4 class="name">Ruténium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">45</p>
+          <h2 class="symbol">Rh</h2>
+          <h4 class="name">Ródium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">46</p>
+          <h2 class="symbol">Pd</h2>
+          <h4 class="name">Palládium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">47</p>
+          <h2 class="symbol">Ag</h2>
+          <h4 class="name">Ezüst</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">48</p>
+          <h2 class="symbol">Cd</h2>
+          <h4 class="name">Kadmium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element basicmetal" id="">
+          <p class="number">49</p>
+          <h2 class="symbol">In</h2>
+          <h4 class="name">Indium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element basicmetal" id="">
+          <p class="number">50</p>
+          <h2 class="symbol">Sn</h2>
+          <h4 class="name">Ón</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element basicmetal" id="">
+          <p class="number">51</p>
+          <h2 class="symbol">Sb</h2>
+          <h4 class="name">Antimon</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element basicmetal" id="">
+          <p class="number">52</p>
+          <h2 class="symbol">Te</h2>
+          <h4 class="name">Tellúr</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element halogen" id="">
+          <p class="number">53</p>
+          <h2 class="symbol">I</h2>
+          <h4 class="name">Jód</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element noblegas" id="">
+          <p class="number">54</p>
+          <h2 class="symbol">Xe</h2>
+          <h4 class="name">Xenon</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element alkalimetal" id="">
+          <p class="number">55</p>
+          <h2 class="symbol">Cs</h2>
+          <h4 class="name">Cézium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element alkalineearth" id="">
+          <p class="number">56</p>
+          <h2 class="symbol">Ba</h2>
+          <h4 class="name">Bárium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class=" element lantha_series lanthanide" id="">
+          <p class="number">57-71</p>
+        </div>
+        <!--lanthanide-->
+        <div class="element transitionmetal" id="">
+          <p class="number">72</p>
+          <h2 class="symbol">Hf</h2>
+          <h4 class="name">Hafnium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">73</p>
+          <h2 class="symbol">Ta</h2>
+          <h4 class="name">Tantál</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">74</p>
+          <h2 class="symbol">W</h2>
+          <h4 class="name">Volfrám</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">75</p>
+          <h2 class="symbol">Re</h2>
+          <h4 class="name">Rénium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">76</p>
+          <h2 class="symbol">Os</h2>
+          <h4 class="name">Ozmium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">77</p>
+          <h2 class="symbol">R</h2>
+          <h4 class="name">Irídium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">78</p>
+          <h2 class="symbol">Pt</h2>
+          <h4 class="name">Platina</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">79</p>
+          <h2 class="symbol">Au</h2>
+          <h4 class="name">Arany</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">80</p>
+          <h2 class="symbol">Hg</h2>
+          <h4 class="name">Higany</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element basicmetal" id="">
+          <p class="number">81</p>
+          <h2 class="symbol">Tl</h2>
+          <h4 class="name">Tallium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element basicmetal" id="">
+          <p class="number">82</p>
+          <h2 class="symbol">Pb</h2>
+          <h4 class="name">Ólom</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element basicmetal" id="">
+          <p class="number">83</p>
+          <h2 class="symbol">Bi</h2>
+          <h4 class="name">Bizmut</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element basicmetal" id="">
+          <p class="number">84</p>
+          <h2 class="symbol">Po</h2>
+          <h4 class="name">Polónium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element halogen" id="">
+          <p class="number">85</p>
+          <h2 class="symbol">At</h2>
+          <h4 class="name">Asztácium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element noblegas" id="">
+          <p class="number">86</p>
+          <h2 class="symbol">Rn</h2>
+          <h4 class="name">Radon</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element alkalimetal" id="">
+          <p class="number">87</p>
+          <h2 class="symbol">Fr</h2>
+          <h4 class="name">Francium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element alkalineearth" id="">
+          <p class="number">88</p>
+          <h2 class="symbol">Ra</h2>
+          <h4 class="name">Rádium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element acti_series actinid" id="">
+          <p class="number">89-103</p>
+        </div>
+        <!--actinid-->
+        <div class="element transitionmetal" id="">
+          <p class="number">104</p>
+          <h2 class="symbol">Rf</h2>
+          <h4 class="name">Raderfor<wbr>dium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">105</p>
+          <h2 class="symbol">Db</h2>
+          <h4 class="name">Dubnium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">106</p>
+          <h2 class="symbol">Sg</h2>
+          <h4 class="name">Sziborgium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">107</p>
+          <h2 class="symbol">Bh</h2>
+          <h4 class="name">Bohrium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">108</p>
+          <h2 class="symbol">Hs</h2>
+          <h4 class="name">Hasszium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">109</p>
+          <h2 class="symbol">Mt</h2>
+          <h4 class="name">Meitnérium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">110</p>
+          <h2 class="symbol">Ds</h2>
+          <h4 class="name">Darmstadt<wbr>ium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">111</p>
+          <h2 class="symbol">Rg</h2>
+          <h4 class="name">Röntgénium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element transitionmetal" id="">
+          <p class="number">112</p>
+          <h2 class="symbol">Cn</h2>
+          <h4 class="name">Koperní<wbr>cium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element basicmetal" id="">
+          <p class="number">113</p>
+          <h2 class="symbol">Nh</h2>
+          <h4 class="name">Nihónium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element basicmetal" id="">
+          <p class="number">114</p>
+          <h2 class="symbol">Fl</h2>
+          <h4 class="name">Flevórium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element basicmetal" id="">
+          <p class="number">115</p>
+          <h2 class="symbol">Mc</h2>
+          <h4 class="name">Moszkóvium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element basicmetal" id="">
+          <p class="number">116</p>
+          <h2 class="symbol">LV</h2>
+          <h4 class="name">Livermó<wbr>rium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element halogen" id="">
+          <p class="number">117</p>
+          <h2 class="symbol">Ts</h2>
+          <h4 class="name">Tenesszium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element noblegas" id="">
+          <p class="number">118</p>
+          <h2 class="symbol">Og</h2>
+          <h4 class="name">Oganeszon</h4>
+          <p class="mass"></p>
+        </div>
+        <!--div class="element" id="">
+          <p class="number">119</p>
+          <h2 class="symbol">Uue</h2>
+          <h4 class="name">Ununennium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element" id="">
+          <p class="number">120</p>
+          <h2 class="symbol">Ubn</h2>
+          <h4 class="name">Unbinilium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element" id="">
+          <p class="number">121</p>
+          <h2 class="symbol">Ubu</h2>
+          <h4 class="name">Unbiunium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element" id="">
+          <p class="number">122</p>
+          <h2 class="symbol">Ubb</h2>
+          <h4 class="name">Unbibium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element" id="">
+          <p class="number">124</p>
+          <h2 class="symbol">Ubq</h2>
+          <h4 class="name">Unbikvadium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element" id="">
+          <p class="number">125</p>
+          <h2 class="symbol">Ubp</h2>
+          <h4 class="name">Unbipentium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element" id="">
+          <p class="number">128</p>
+          <h2 class="symbol">Ubo</h2>
+          <h4 class="name">Unbioktium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element" id="">
+          <p class="number">129</p>
+          <h2 class="symbol">Ube</h2>
+          <h4 class="name">Unbiennium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element" id="">
+          <p class="number">130</p>
+          <h2 class="symbol">Utn</h2>
+          <h4 class="name">Untrinilium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element" id="">
+          <p class="number">131</p>
+          <h2 class="symbol">Utu</h2>
+          <h4 class="name">Untriunium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element" id="">
+          <p class="number">132</p>
+          <h2 class="symbol">Utb</h2>
+          <h4 class="name">Untribium</h4>
+          <p class="mass"></p>
+        </div-->
+      </div>
+      <div class="lanth-act">
+        <div class="element lanthanide" id="">
+          <p class="number">57</p>
+          <h2 class="symbol">La</h2>
+          <h4 class="name">Lantán</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element lanthanide" id="58">
+          <p class="number">58</p>
+          <h2 class="symbol">Ce</h2>
+          <h4 class="name">Cérium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element lanthanide" id="59">
+          <p class="number">59</p>
+          <h2 class="symbol">Pr</h2>
+          <h4 class="name">Prazeodí<wbr>mium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element lanthanide" id="60">
+          <p class="number">60</p>
+          <h2 class="symbol">Nd</h2>
+          <h4 class="name">Neodímium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element lanthanide" id="61">
+          <p class="number">61</p>
+          <h2 class="symbol">Pm</h2>
+          <h4 class="name">Prométium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element lanthanide" id="62">
+          <p class="number">62</p>
+          <h2 class="symbol">Sm</h2>
+          <h4 class="name">Szamárium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element lanthanide" id="63">
+          <p class="number">63</p>
+          <h2 class="symbol">Eu</h2>
+          <h4 class="name">Európium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element lanthanide" id="64">
+          <p class="number">64</p>
+          <h2 class="symbol">Gd</h2>
+          <h4 class="name">Gadolínium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element lanthanide" id="65">
+          <p class="number">65</p>
+          <h2 class="symbol">Tb</h2>
+          <h4 class="name">Terbium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element lanthanide" id="66">
+          <p class="number">66</p>
+          <h2 class="symbol">Dy</h2>
+          <h4 class="name">Diszprózium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element lanthanide" id="67">
+          <p class="number">67</p>
+          <h2 class="symbol">Ho</h2>
+          <h4 class="name">Holmium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element lanthanide" id="68">
+          <p class="number">68</p>
+          <h2 class="symbol">Er</h2>
+          <h4 class="name">Erbium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element lanthanide" id="69">
+          <p class="number">69</p>
+          <h2 class="symbol">Tm</h2>
+          <h4 class="name">Túlium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element lanthanide" id="70">
+          <p class="number">70</p>
+          <h2 class="symbol">Yb</h2>
+          <h4 class="name">Itterbium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element lanthanide" id="71">
+          <p class="number">71</p>
+          <h2 class="symbol">Lu</h2>
+          <h4 class="name">Lutécium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element actinid" id="89">
+          <p class="number">89</p>
+          <h2 class="symbol">Ac</h2>
+          <h4 class="name">Aktínium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element actinid" id="91">
+          <p class="number">90</p>
+          <h2 class="symbol">Th</h2>
+          <h4 class="name">Tórium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element actinid" id="91">
+          <p class="number">91</p>
+          <h2 class="symbol">Pa</h2>
+          <h4 class="name">Proaktínium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element actinid" id="92">
+          <p class="number">92</p>
+          <h2 class="symbol">U</h2>
+          <h4 class="name">Urán</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element actinid" id="93">
+          <p class="number">93</p>
+          <h2 class="symbol">Np</h2>
+          <h4 class="name">Neptúnium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element actinid" id="94">
+          <p class="number">94</p>
+          <h2 class="symbol">Pu</h2>
+          <h4 class="name">Plutónium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element actinid" id="95">
+          <p class="number">95</p>
+          <h2 class="symbol">Am</h2>
+          <h4 class="name">Amerícium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element actinid" id="96">
+          <p class="number">96</p>
+          <h2 class="symbol">Cm</h2>
+          <h4 class="name">Kűrium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element actinid" id="97">
+          <p class="number">97</p>
+          <h2 class="symbol">Bk</h2>
+          <h4 class="name">Berkélium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element actinid" id="98">
+          <p class="number">98</p>
+          <h2 class="symbol">Cf</h2>
+          <h4 class="name">Kalifornium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element actinid" id="99">
+          <p class="number">99</p>
+          <h2 class="symbol">Es</h2>
+          <h4 class="name">Einsteinium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element actinid" id="100">
+          <p class="number">100</p>
+          <h2 class="symbol">Fm</h2>
+          <h4 class="name">Fermuim</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element actinid" id="101">
+          <p class="number">101</p>
+          <h2 class="symbol">Md</h2>
+          <h4 class="name">Mendelé<wbr>vium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element actinid" id="102">
+          <p class="number">102</p>
+          <h2 class="symbol">No</h2>
+          <h4 class="name">Nobélium</h4>
+          <p class="mass"></p>
+        </div>
+        <div class="element actinid" id="103">
+          <p class="number">103</p>
+          <h2 class="symbol">Lr</h2>
+          <h4 class="name">Laurencium</h4>
+          <p class="mass"></p>
+        </div>
+      </div>
+      <div class="key">
+        <div class="element alkalimetal">
+          <h4 class="type">Alkáli fémek</h4>
+        </div>
+        <div class="element alkalineearth">
+          <h4 class="type">Alkáli-földfémek</h4>
+        </div>
+        <div class="element transitionmetal">
+          <h4 class="type">Átmeneti fémek</h4>
+        </div>
+        <div class="element basicmetal">
+          <h4 class="type">Másodfajú fémek</h4>
+        </div>
+        <div class="element metalloid">
+          <h4 class="type">Félfémek</h4>
+        </div>
+        <div class="element nonmetal">
+          <h4 class="type">Nemfémek</h4>
+        </div>
+        <div class="element halogen">
+          <h4 class="type">Halogének</h4>
+        </div>
+        <div class="element noblegas">
+          <h4 class="type">Nemesgá<wbr>zok</h4>
+        </div>
+        <div class="element lanthanide">
+          <h4 class="type">Lantanoi<wbr>dák</h4>
+        </div>
+        <div class="element actinid">
+          <h4 class="type">Aktinoi<wbr>dák</h4>
+        </div>
+      </div>
+    </main>
+    <div class="overlay">
+      <!--It will contain a picture, a video, some data, a wiki-link-->
+      <p class="close"><i class="fas fa-times"></i></p>
+      <!--iframe src="overlay.html" width="100%" height="100%"></iframe-->
+      <div class="overview">
+        <h1 class="materialname"></h1>
+        <div class="imgbox"><img id="materialimage" src="" alt=""></div>
+        <a href="" id="wikilink"></a>
+      </div>
+    </div>
+    <footer>
+      <p>Készítette: <a href="https://github.com/BronsonTheGoat">Sebestyén Zoltán</a>. <a href="copyright.html">Szerzői jogok</a></p>
+    </footer>
+  </body>
+</html>

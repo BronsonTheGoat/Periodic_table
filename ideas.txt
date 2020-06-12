@@ -1,0 +1,2 @@
+hover: fill the card with the border color
+onclick: go to a page where an image of the material and information are appears and also contains a video of it
