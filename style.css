@@ -5,7 +5,7 @@
 
 body {
   max-width: 100vw;
-  height: 100vh;
+  max-height: 100vh;
   background: #FFF;
 }
 
@@ -55,10 +55,11 @@ body {
 }
 
 .element {
-  width: calc(85vw / 18);
-  height: calc(85vw / 18);
+  width: calc(70vw / 18);
+  height: calc(70vw / 18);
   border: 2px solid black;
   border-radius: 10px;
+  margin: auto;
   text-align: center;
   overflow-wrap: break-word;
   cursor: pointer;
@@ -69,23 +70,27 @@ body {
   text-align: left;
   font-weight: bold;
   font-family: sans-serif;
-  font-size: .8em;
+  font-size: .6em;
   cursor: pointer;
 }
 
 .symbol {
-  font-size: 1.2em;
+  font-size: 1em;
   cursor: pointer;
 }
 
 .name {
-  font-size: .8em;
+  font-size: .7em;
   cursor: pointer;
 }
 
 .mass {
-  font-size: .7em;
+  font-size: .6em;
   cursor: pointer;
+}
+
+.type {
+  font-size: .8em;
 }
 
 .lanth-act {
@@ -94,7 +99,7 @@ body {
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   max-width: 50%;
-  margin: 30px 0 30px 18%;
+  margin: 30px 0 20px 18%;
 }
 
 .key {
